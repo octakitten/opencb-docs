@@ -8,8 +8,6 @@ build:
   os: ubuntu-22.04
   tools:
     python: "3.12"
-    sphinx: "7.3.7"
-    sphinx-autoapi: "3.0.0"
 
 python:
   install:
