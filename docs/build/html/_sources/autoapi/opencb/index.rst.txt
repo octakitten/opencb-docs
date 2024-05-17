@@ -1,0 +1,27 @@
+:py:mod:`opencb`
+================
+
+.. py:module:: opencb
+
+
+Subpackages
+-----------
+.. toctree::
+   :titlesonly:
+   :maxdepth: 3
+
+   games/index.rst
+   models/index.rst
+   routines/index.rst
+   utilities/index.rst
+
+
+Submodules
+----------
+.. toctree::
+   :titlesonly:
+   :maxdepth: 1
+
+   __about__/index.rst
+
+

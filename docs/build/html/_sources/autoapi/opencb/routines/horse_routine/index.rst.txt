@@ -1,0 +1,27 @@
+:py:mod:`opencb.routines.horse_routine`
+=======================================
+
+.. py:module:: opencb.routines.horse_routine
+
+
+Module Contents
+---------------
+
+Classes
+~~~~~~~
+
+.. autoapisummary::
+
+   opencb.routines.horse_routine.horse_routine
+
+
+
+
+.. py:class:: horse_routine
+
+
+   .. py:method:: run_routine()
+      :staticmethod:
+
+
+

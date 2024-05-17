@@ -1,0 +1,111 @@
+:py:mod:`opencb.routines`
+=========================
+
+.. py:module:: opencb.routines
+
+
+Submodules
+----------
+.. toctree::
+   :titlesonly:
+   :maxdepth: 1
+
+   camel_routine/index.rst
+   grizzlybear_routine/index.rst
+   horse_routine/index.rst
+   iteration/index.rst
+
+
+Package Contents
+----------------
+
+Classes
+~~~~~~~
+
+.. autoapisummary::
+
+   opencb.routines.grizzlybear_routine
+   opencb.routines.horse_routine
+
+
+
+Functions
+~~~~~~~~~
+
+.. autoapisummary::
+
+   opencb.routines.test001
+   opencb.routines.test002
+   opencb.routines.test003
+   opencb.routines.test004
+   opencb.routines.test005
+   opencb.routines.test006
+   opencb.routines.test007
+   opencb.routines.test008
+   opencb.routines.test009
+   opencb.routines.test010
+   opencb.routines.test011
+
+
+
+.. py:class:: grizzlybear_routine
+
+
+   .. py:method:: run_routine()
+      :staticmethod:
+
+
+
+.. py:class:: horse_routine
+
+
+   .. py:method:: run_routine()
+      :staticmethod:
+
+
+
+.. py:function:: test001()
+
+
+.. py:function:: test002()
+
+
+.. py:function:: test003()
+
+
+.. py:function:: test004()
+
+
+.. py:function:: test005()
+
+
+.. py:function:: test006()
+
+
+.. py:function:: test007()
+
+
+.. py:function:: test008()
+
+
+.. py:function:: test009()
+
+
+.. py:function:: test010()
+
+
+.. py:function:: test011()
+
+   :Parameters:
+   none
+   :Returns:
+   none
+   :Comments:
+   This function is a test for iterating on the general_dev model. This is the latest model as of 05-17-2024. The goal with iterating
+   on the model is to develop a set of parameters that work to have the model solve the game it's currently playing.
+   For this function we're making use of the game find_food_003, where the model is supposed to move a dot from a random 
+   location on the screen and get it to the top left corner of the screen. This function will run the game until it's won,
+   changing the models parameters each time it fails. The model's parameters will be saved to a file if it wins a game, otherwise
+   this function will run indefinitely.
+
+

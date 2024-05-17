@@ -1,0 +1,14 @@
+:py:mod:`opencb.__about__`
+==========================
+
+.. py:module:: opencb.__about__
+
+
+Module Contents
+---------------
+
+.. py:data:: __version__
+   :value: 'v0.4.0b43'
+
+   
+

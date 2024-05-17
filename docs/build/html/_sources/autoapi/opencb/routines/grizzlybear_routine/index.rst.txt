@@ -1,0 +1,27 @@
+:py:mod:`opencb.routines.grizzlybear_routine`
+=============================================
+
+.. py:module:: opencb.routines.grizzlybear_routine
+
+
+Module Contents
+---------------
+
+Classes
+~~~~~~~
+
+.. autoapisummary::
+
+   opencb.routines.grizzlybear_routine.grizzlybear_routine
+
+
+
+
+.. py:class:: grizzlybear_routine
+
+
+   .. py:method:: run_routine()
+      :staticmethod:
+
+
+

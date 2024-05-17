@@ -1,0 +1,171 @@
+:py:mod:`opencb.models.grizzlybear`
+===================================
+
+.. py:module:: opencb.models.grizzlybear
+
+
+Module Contents
+---------------
+
+Classes
+~~~~~~~
+
+.. autoapisummary::
+
+   opencb.models.grizzlybear.grizzlybear
+
+
+
+
+.. py:class:: grizzlybear
+
+
+   .. py:attribute:: width
+      :value: 255
+
+      
+
+   .. py:attribute:: height
+      :value: 255
+
+      
+
+   .. py:attribute:: depth
+      :value: 32
+
+      
+
+   .. py:attribute:: threshhold_max
+
+      
+
+   .. py:attribute:: output01
+      :value: (32, 32, 20)
+
+      
+
+   .. py:attribute:: output01_thresh_positive
+
+      
+
+   .. py:attribute:: output01_thresh_negative
+
+      
+
+   .. py:attribute:: output02
+      :value: (32, 96, 20)
+
+      
+
+   .. py:attribute:: output02_thresh_positive
+
+      
+
+   .. py:attribute:: output02_thresh_negative
+
+      
+
+   .. py:attribute:: output03
+      :value: (96, 32, 20)
+
+      
+
+   .. py:attribute:: output03_thresh_positive
+
+      
+
+   .. py:attribute:: output03_thresh_negative
+
+      
+
+   .. py:attribute:: output04
+      :value: (96, 96, 20)
+
+      
+
+   .. py:attribute:: output04_thresh_positive
+
+      
+
+   .. py:attribute:: output04_thresh_negative
+
+      
+
+   .. py:attribute:: layer0
+
+      
+
+   .. py:attribute:: layer1
+
+      
+
+   .. py:attribute:: layer2
+
+      
+
+   .. py:attribute:: emotion1
+
+      
+
+   .. py:attribute:: emotion2
+
+      
+
+   .. py:attribute:: emotion3
+
+      
+
+   .. py:attribute:: emotion4
+
+      
+
+   .. py:attribute:: personality1
+
+      
+
+   .. py:attribute:: personality2
+
+      
+
+   .. py:attribute:: personality3
+
+      
+
+   .. py:attribute:: personality4
+
+      
+
+   .. py:attribute:: personality5
+
+      
+
+   .. py:attribute:: personality6
+
+      
+
+   .. py:attribute:: personality7
+
+      
+
+   .. py:attribute:: personality8
+
+      
+
+   .. py:attribute:: pos_propensity
+
+      
+
+   .. py:attribute:: neg_propensity
+
+      
+
+   .. py:method:: byop(pers, thresh)
+
+
+   .. py:method:: get_a_personality()
+
+
+   .. py:method:: update(input_image)
+
+
+

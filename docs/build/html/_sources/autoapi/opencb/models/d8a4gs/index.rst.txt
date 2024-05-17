@@ -1,0 +1,160 @@
+:py:mod:`opencb.models.d8a4gs`
+==============================
+
+.. py:module:: opencb.models.d8a4gs
+
+
+Module Contents
+---------------
+
+Classes
+~~~~~~~
+
+.. autoapisummary::
+
+   opencb.models.d8a4gs.d8a4gs
+
+
+
+
+.. py:class:: d8a4gs
+
+
+   .. py:attribute:: width
+      :value: 255
+
+      
+
+   .. py:attribute:: height
+      :value: 255
+
+      
+
+   .. py:attribute:: depth
+      :value: 8
+
+      
+
+   .. py:attribute:: output01
+      :value: (32, 32, 7)
+
+      
+
+   .. py:attribute:: output01_thresh_positive
+      :value: 180
+
+      
+
+   .. py:attribute:: output01_thresh_negative
+
+      
+
+   .. py:attribute:: output02
+      :value: (32, 96, 7)
+
+      
+
+   .. py:attribute:: output02_thresh_positive
+      :value: 180
+
+      
+
+   .. py:attribute:: output02_thresh_negative
+
+      
+
+   .. py:attribute:: output03
+      :value: (96, 32, 7)
+
+      
+
+   .. py:attribute:: output03_thresh_positive
+      :value: 180
+
+      
+
+   .. py:attribute:: output03_thresh_negative
+
+      
+
+   .. py:attribute:: output04
+      :value: (96, 96, 7)
+
+      
+
+   .. py:attribute:: output04_thresh_positive
+      :value: 180
+
+      
+
+   .. py:attribute:: output04_thresh_negative
+
+      
+
+   .. py:attribute:: layer0
+
+      
+
+   .. py:attribute:: layer1
+
+      
+
+   .. py:attribute:: layer2
+
+      
+
+   .. py:attribute:: layer1_1
+
+      
+
+   .. py:attribute:: layer1_2
+
+      
+
+   .. py:attribute:: layer2_1
+
+      
+
+   .. py:attribute:: layer2_2
+
+      
+
+   .. py:attribute:: layer1_1_1
+
+      
+
+   .. py:attribute:: layer1_1_2
+
+      
+
+   .. py:attribute:: layer1_2_1
+
+      
+
+   .. py:attribute:: layer1_2_2
+
+      
+
+   .. py:attribute:: layer2_1_1
+
+      
+
+   .. py:attribute:: layer2_1_2
+
+      
+
+   .. py:attribute:: layer2_2_1
+
+      
+
+   .. py:attribute:: layer2_2_2
+
+      
+
+   .. py:method:: byop(personality1_1_1, personality1_1_2, personality1_2_1, personality1_2_2, personality2_1_1, personality2_1_2, personality2_2_1, personality2_2_2)
+
+
+   .. py:method:: update(input_image)
+
+
+

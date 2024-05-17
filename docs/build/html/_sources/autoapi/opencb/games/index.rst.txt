@@ -1,0 +1,45 @@
+:py:mod:`opencb.games`
+======================
+
+.. py:module:: opencb.games
+
+
+Submodules
+----------
+.. toctree::
+   :titlesonly:
+   :maxdepth: 1
+
+   move_dots/index.rst
+
+
+Package Contents
+----------------
+
+Classes
+~~~~~~~
+
+.. autoapisummary::
+
+   opencb.games.game001
+
+
+
+
+.. py:class:: game001
+
+
+   .. py:attribute:: screen
+      :value: 0
+
+      
+
+   .. py:attribute:: victory
+      :value: 0
+
+      
+
+   .. py:method:: __create_victory_condition()
+
+
+

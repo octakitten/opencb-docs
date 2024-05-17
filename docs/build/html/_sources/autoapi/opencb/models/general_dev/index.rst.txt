@@ -1,0 +1,415 @@
+:py:mod:`opencb.models.general_dev`
+===================================
+
+.. py:module:: opencb.models.general_dev
+
+
+Module Contents
+---------------
+
+Classes
+~~~~~~~
+
+.. autoapisummary::
+
+   opencb.models.general_dev.general_dev
+
+
+
+
+.. py:class:: general_dev
+
+
+   .. py:attribute:: min_dx
+
+      
+
+   .. py:attribute:: min_dy
+
+      
+
+   .. py:attribute:: width
+      :value: 0
+
+      
+
+   .. py:attribute:: height
+      :value: 0
+
+      
+
+   .. py:attribute:: depth
+      :value: 0
+
+      
+
+   .. py:attribute:: bounds
+      :value: 0
+
+      
+
+   .. py:attribute:: colors
+      :value: 255
+
+      
+
+   .. py:attribute:: maleability
+      :value: 1.1
+
+      
+
+   .. py:attribute:: range_high
+      :value: 2.0
+
+      
+
+   .. py:attribute:: range_low
+
+      
+
+   .. py:attribute:: num_controls
+      :value: 0
+
+      
+
+   .. py:attribute:: controls
+      :value: []
+
+      
+
+   .. py:attribute:: thresholds_pos
+      :value: []
+
+      
+
+   .. py:attribute:: thresholds_neg
+      :value: []
+
+      
+
+   .. py:attribute:: num_sensations
+      :value: 0
+
+      
+
+   .. py:attribute:: sensations
+      :value: []
+
+      
+
+   .. py:attribute:: layer0
+      :value: 0
+
+      
+
+   .. py:attribute:: layer1
+      :value: 0
+
+      
+
+   .. py:attribute:: layer2
+      :value: 0
+
+      
+
+   .. py:attribute:: layer3
+      :value: 0
+
+      
+
+   .. py:attribute:: layer4
+      :value: 0
+
+      
+
+   .. py:attribute:: emotion1
+      :value: 0
+
+      
+
+   .. py:attribute:: emotion2
+      :value: 0
+
+      
+
+   .. py:attribute:: emotion3
+      :value: 0
+
+      
+
+   .. py:attribute:: emotion4
+      :value: 0
+
+      
+
+   .. py:attribute:: emotion5
+      :value: 0
+
+      
+
+   .. py:attribute:: emotion6
+      :value: 0
+
+      
+
+   .. py:attribute:: emotion7
+      :value: 0
+
+      
+
+   .. py:attribute:: emotion8
+      :value: 0
+
+      
+
+   .. py:attribute:: personality1
+      :value: 0
+
+      
+
+   .. py:attribute:: personality2
+      :value: 0
+
+      
+
+   .. py:attribute:: personality3
+      :value: 0
+
+      
+
+   .. py:attribute:: personality4
+      :value: 0
+
+      
+
+   .. py:attribute:: personality5
+      :value: 0
+
+      
+
+   .. py:attribute:: personality6
+      :value: 0
+
+      
+
+   .. py:attribute:: personality7
+      :value: 0
+
+      
+
+   .. py:attribute:: personality8
+      :value: 0
+
+      personality9 = 0
+      personality10 = 0
+      personality11 = 0
+      personality12 = 0
+      personality13 = 0
+      personality14 = 0
+      personality15 = 0
+      personality16 = 0
+
+
+   .. py:attribute:: pos_propensity
+      :value: 0
+
+      
+
+   .. py:attribute:: neg_propensity
+      :value: 0
+
+      
+
+   .. py:attribute:: positive_firing
+      :value: 0
+
+      
+
+   .. py:attribute:: positive_resting
+      :value: 0
+
+      
+
+   .. py:attribute:: negative_firing
+      :value: 0
+
+      
+
+   .. py:attribute:: negative_resting
+      :value: 0
+
+      
+
+   .. py:attribute:: pos_fire_amt
+      :value: 0
+
+      
+
+   .. py:attribute:: neg_fire_amt
+      :value: 0
+
+      
+
+   .. py:attribute:: pos_fire_amt_mult
+      :value: 0
+
+      
+
+   .. py:attribute:: neg_fire_amt_mult
+      :value: 0
+
+      
+
+   .. py:attribute:: propensity
+      :value: 0
+
+      
+
+   .. py:method:: save(path)
+
+
+   .. py:method:: copy(model)
+
+      Copy a model's parameters to a new model.
+
+      :Parameters:
+      model (general): the model to copy
+
+      :Returns:
+      none
+
+
+   .. py:method:: create(w, h, d, b, num_controls, num_sensations)
+
+      Create a new model with the given dimensions and number of controls.
+
+      :Parameters: 
+      w (int): width of input images in pixels
+      h (int): height of input images in pixels
+      d (int): depth of the neural space
+      num_controls (int): number of controls
+
+      :Returns:
+      none
+
+      :Comments:
+      This function creates a new, randomly initialized model with the dimensions and number of controls given.
+      Importantly, this model will only be able to accept images of the specified width and height.
+      The depth of the model determines its complexity. With more depth, the runtime and memory usage
+      also increase dramatically. The number of controls determines what outputs the model can have. If you want it to 
+      perform a certain task that requires, for instance, controlling 4 seperate keyboard keypresses, 
+      then you would want a model with 4 controls.
+
+
+   .. py:method:: __new_range(r)
+
+
+   .. py:method:: __new_thresholds()
+
+
+   .. py:method:: __new_controls()
+
+
+   .. py:method:: __new_personality()
+
+      Initialize the model's personality layers.
+
+      :Parameters:
+      none
+
+      :Returns:
+      none
+
+      :Comments: 
+      the personality layers are the only parts of the model that don't change over time. we initialize all the layers here,
+      from layer0 to emotion8 to personality8, but the personality layers we initialize to random values. These random values
+      should range from 1 to n for the positive personality layers, and 1 to 1/n for the negative personality layers. in order to 
+      achieve this, we first generate random values between 0 and 1, then for the positive layers we multiply by n and add 1, and for
+      the negative layers we divide by n and subtract from 1. This will give us the desired range of values for the personality layers.
+
+
+   .. py:method:: __new_propensity()
+
+
+   .. py:method:: __new_sensations()
+
+
+   .. py:method:: __pos_sensation(sense_num, amt)
+
+
+   .. py:method:: __neg_sensation(sense_num, amt)
+
+
+   .. py:method:: train(sense_num, amt, pos)
+
+      Train the model by giving it feedback on its actions.
+
+      :Parameters:
+      sense_num (int): the index of the sensation neuron to train
+      amt (float): the amount to train the sensation neuron by
+      pos (bool): whether the sensation is positive or negative
+
+      :Returns:
+      none
+
+      :Comments: 
+      Call this function whenever the model either does something right or makes a mistake.
+      set pos to True if the sensation is positive, and False if the sensation is negative.
+      You'll need to set conditions in your game that call this function automatically while it's playing.
+      This function is also intended to be used later on in the training process, when the model is
+      being used by a user on real world tasks and needs feedback.
+
+
+   .. py:method:: permute(degree, fraction)
+
+      Permute the model's personality by a certain degree.
+
+      :Parameters:
+      degree (int): positive integer which increases how much the permutation changes the model
+      fraction (int): positive integer which lessens the degree of the permutation as it receives higher values
+
+      :Returns:
+      none
+
+      :Comments: 
+      You will absolutely need to trial and error with the degree to see what works best for your use case.
+      This function will enable iterating on the personality traits of a model which has already proven useful.
+      You'll want to use this to make small, incremental improvements to a model and then test it to see whether to move 
+      forward with the changes or roll back to a previous version.
+
+      If you want the model to change quickly, set the degree to a high number, and the fraction to 1.
+      If you want the model to change slowly (and in most cases you will want this), set the degree to 1 and
+      the fraction to higher numbers. The higher fraction goes, the slower the model will change with each iteration.
+
+      Once a minimal working model has been found, this function will be what we primarily use to iterate on it.
+
+
+   .. py:method:: save(path)
+
+
+   .. py:method:: update(input_image)
+
+      Main control function for the model.
+
+      :Parameters:
+      input_image (tensor): the image to input into the model
+
+      :Returns:
+      take_action (list): a list of booleans representing whether the controls should be activated or not
+
+      :Comments: 
+      This function is what makes the model 'act'. It takes an image as input and processes it by firing neurons.
+      Usually a single image will not be enough to cause the model to take any action - you'll need to feed it a continuous
+      stream of images that the model can react to and see its reactions change things in the image, as well. This style of 
+      model doesn't work if it can't interact with its environment, so you'll need to have the model play a predefined game
+      of your design or choosing, otherwise it won't do anything useful. 
+
+      The game which you use or create should give the model a tensor image and then call this function to get the model's
+      next action. The model will then return a list of booleans, each representing whether each control it has should be activated or not.
+      It's up to you to make those controls do something in its environment.
+
+      Provided in this library are some simple example games to get you started. You can also look at the testing scripts to see how to 
+      implement them.
+
+
+

@@ -1,0 +1,190 @@
+:py:mod:`opencb.utilities.game`
+===============================
+
+.. py:module:: opencb.utilities.game
+
+
+Module Contents
+---------------
+
+Classes
+~~~~~~~
+
+.. autoapisummary::
+
+   opencb.utilities.game.game
+   opencb.utilities.game.find_food_01
+   opencb.utilities.game.find_food_02
+   opencb.utilities.game.find_food_03
+
+
+
+
+.. py:class:: game
+
+
+   .. py:attribute:: game_screen
+      :value: 0
+
+      
+
+   .. py:method:: screen()
+
+
+
+.. py:class:: find_food_01(w, h)
+
+
+   Bases: :py:obj:`game`
+
+   .. py:attribute:: victory_condition
+      :value: 0
+
+      
+
+   .. py:attribute:: blob
+      :value: 0
+
+      
+
+   .. py:method:: victory()
+
+
+   .. py:method:: screen_update(x, y)
+
+
+   .. py:method:: starting_screen()
+
+
+   .. py:method:: choose_starting_location()
+
+
+   .. py:method:: blob_action(action)
+
+
+   .. py:method:: play_game()
+
+
+
+.. py:class:: find_food_02(model)
+
+
+   Bases: :py:obj:`game`
+
+   .. py:attribute:: victory_condition
+      :value: 0
+
+      
+
+   .. py:attribute:: blob
+      :value: 0
+
+      
+
+   .. py:method:: __create_victory_condition()
+
+
+   .. py:method:: __victory()
+
+
+   .. py:method:: __screen_update(x, y)
+
+
+   .. py:method:: __create_starting_screen()
+
+
+   .. py:method:: __choose_starting_location()
+
+
+   .. py:method:: __blob_action(action)
+
+
+   .. py:method:: __set_x(w)
+
+
+   .. py:method:: __set_y(h)
+
+
+   .. py:method:: set_model(model)
+
+
+   .. py:method:: play_game()
+
+
+
+.. py:class:: find_food_03(model)
+
+
+   Bases: :py:obj:`game`
+
+   .. py:attribute:: victory_condition
+      :value: 0
+
+      
+
+   .. py:attribute:: blob
+      :value: 0
+
+      
+
+   .. py:attribute:: victory_x
+      :value: 0
+
+      
+
+   .. py:attribute:: victory_y
+      :value: 0
+
+      
+
+   .. py:attribute:: starting_x
+      :value: 0
+
+      
+
+   .. py:attribute:: starting_y
+      :value: 0
+
+      
+
+   .. py:attribute:: min_dx
+      :value: 0
+
+      
+
+   .. py:attribute:: min_dy
+      :value: 0
+
+      
+
+   .. py:method:: __create_victory_condition()
+
+
+   .. py:method:: __victory()
+
+
+   .. py:method:: __screen_update(x, y)
+
+
+   .. py:method:: __create_starting_screen()
+
+
+   .. py:method:: __choose_starting_location()
+
+
+   .. py:method:: __blob_action(action)
+
+
+   .. py:method:: __set_x(w)
+
+
+   .. py:method:: __set_y(h)
+
+
+   .. py:method:: set_model(model)
+
+
+   .. py:method:: play_game()
+
+
+
