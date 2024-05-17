@@ -1,0 +1,31 @@
+# Read the Docs config file
+
+# required
+version: 2
+
+# OS, python version, other tools
+build:
+  os: ubuntu-22.04
+  tools:
+    python: "3.12"
+    sphinx: "7.3.7"
+    sphinx-autoapi: "3.0.0"
+
+# build in the docs/ directory with sphinx
+sphinx:
+  configuration: docs/conf.py
+  python_install: true
+  fail_on_warning: false
+  fail_on_error: true
+  formats: all
+
+# optional build formats
+#formats:
+#  - pdf
+#  - epub
+
+# optional python requirements to build documentation
+# this is for reproducible builds
+python:
+  install:
+    - requirements: docs/requirements.txt
