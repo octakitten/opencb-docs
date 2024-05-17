@@ -14,11 +14,7 @@ build:
 # build in the docs/ directory with sphinx
 sphinx:
   configuration: docs/conf.py
-  python_install: true
-  fail_on_warning: false
-  fail_on_error: true
-  formats: all
-
+  
 # optional build formats
 #formats:
 #  - pdf
