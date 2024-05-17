@@ -11,10 +11,14 @@ build:
     sphinx: "7.3.7"
     sphinx-autoapi: "3.0.0"
 
+python:
+  install:
+    - requirements: docs/requirements.txt
+
 # build in the docs/ directory with sphinx
 sphinx:
   configuration: docs/conf.py
-  
+
 # optional build formats
 #formats:
 #  - pdf
@@ -22,6 +26,3 @@ sphinx:
 
 # optional python requirements to build documentation
 # this is for reproducible builds
-python:
-  install:
-    - requirements: docs/requirements.txt
