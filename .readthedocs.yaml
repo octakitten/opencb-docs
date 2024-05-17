@@ -15,7 +15,7 @@ python:
 
 # build in the docs/ directory with sphinx
 sphinx:
-  configuration: docs/conf.py
+  configuration: docs/source/conf.py
 
 # optional build formats
 #formats:
